@@ -1,7 +1,28 @@
 aid: kindred-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kindred-ai.png
 name: Kindred Ai
-description: Kindred Ai is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Kindred AI (Kindred Systems) was an artificial-intelligence and robotics
+  company that applied reinforcement learning and teleoperation to autonomous
+  piece-picking robots for warehouse and retail-fulfillment automation. Founded
+  by D-Wave alumni and backed by DCVC among other investors, Kindred was
+  acquired by Ocado Group in 2020 and folded into Ocado's advanced-robotics
+  operations. It no longer operates an independent public developer surface: the
+  kindred.ai brand domain remains under corporate (CSC) DNS with active Google
+  Workspace mail, but serves no live homepage, developer portal, documentation,
+  or public API. This profile is retained as an enrichment lead surfaced from the
+  DCVC portfolio; no OpenAPI, SDK, or hosted API artifacts could be verified.
 url: https://raw.githubusercontent.com/api-evangelist/kindred-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,31 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-note: Acquired by Ocado Group (2020); no independent public API surface at enrichment time.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Artificial Intelligence
+- Machine Learning
+- Reinforcement Learning
+- Warehouse Automation
+- Supply Chain
+- Acquired
 apis: []
+common:
+- type: DomainSecurity
+  url: security/kindred-ai-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
