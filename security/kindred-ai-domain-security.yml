@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: probed
+source: dig (kindred.ai) — brand domain; no live developer/web host at time of probe
+notes: >-
+  kindred.ai resolves to CSC-managed corporate DNS (brand-protection registrar).
+  https://kindred.ai timed out and https://www.kindred.ai returned HTTP 404 at
+  probe time, so there is no live HTTPS web host to record TLS/HSTS for. The
+  registrable domain still carries active Google Workspace mail plus SPF/DMARC,
+  captured below. Absence of a CAA or DNSSEC record is valid recorded data.
+hosts: []
+domains:
+  - domain: kindred.ai
+    dnssec: false
+    caa: []
+    spf: true
+    spf_record: "v=spf1 include:_spf.google.com include:servers.mcsv.net ?all"
+    dmarc: true
+    dmarc_policy: none
+    dmarc_record: "v=DMARC1; p=none; rua=mailto:interlaced@kindred.ai"
+    mx:
+      - aspmx.l.google.com
+      - alt1.aspmx.l.google.com
+      - alt2.aspmx.l.google.com
+      - alt3.aspmx.l.google.com
+      - alt4.aspmx.l.google.com
