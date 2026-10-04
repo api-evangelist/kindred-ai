@@ -50,7 +50,7 @@ tags:
 - Company
 - Robotics
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Reinforcement Learning
 - Warehouse Automation
 - Supply Chain
@@ -64,6 +64,7 @@ tags_raw:
 - Warehouse Automation
 - Supply Chain
 - Acquired
+- Machine-Learning
 apis: []
 common:
 - type: DomainSecurity
